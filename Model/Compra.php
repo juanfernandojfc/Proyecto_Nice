@@ -121,7 +121,6 @@ namespace Model;
             $sql = "INSERT INTO compra(idProv, idResponsable, fechaCompra, valorTotal) 
             VALUES ('{$this->idProv}','{$this->idResponsable}','{$this->fechaCompra}','{$this->valorTotal}')";
             return $this->con->consultaRetorno($sql);
-            //ccddggdf
         }
 
         public function ultimo(){
