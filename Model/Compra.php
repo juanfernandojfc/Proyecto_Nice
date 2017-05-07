@@ -118,7 +118,6 @@ namespace Model;
         }
 
         public function add(){
-            //paisa rules
             $sql = "INSERT INTO compra(idProv, idResponsable, fechaCompra, valorTotal) 
             VALUES ('{$this->idProv}','{$this->idResponsable}','{$this->fechaCompra}','{$this->valorTotal}')";
             return $this->con->consultaRetorno($sql);
@@ -130,6 +129,5 @@ namespace Model;
             $datos = $datos->fetch_array();
             return $datos[0];
         }
-
     }
 ?>
