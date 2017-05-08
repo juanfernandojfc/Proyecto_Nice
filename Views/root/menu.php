@@ -88,7 +88,8 @@
           </a>
           <ul class="sub">
             <li><a class="" href="/user/setSolicitud">Hacer solicitud</a></li>
-            <li><a class="" href="/user/getSolicitud">Solicitudes</a></li>
+            <li><a class="" href="/user/getPendientes">Pendientes</a></li>
+            <li><a class="" href="/user/getSolicitud">Lista</a></li>
           </ul>
         </li>
         

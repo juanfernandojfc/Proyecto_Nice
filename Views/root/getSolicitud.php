@@ -50,7 +50,7 @@
             </div>
             <div class="row">
                   <div class="col-lg-12">
-                      <section class="panel" id="section-tablaSolicitudes">
+                      <section class="panel" id="secTablaSolicitudes">
                       </section>
                   </div>
               </div>

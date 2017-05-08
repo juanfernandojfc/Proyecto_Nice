@@ -39,6 +39,10 @@ use Model\DetalleSolicitud as detalle;
 
         }
 
+        public function pendientes(){
+
+        }
+
     }
 
 ?>
