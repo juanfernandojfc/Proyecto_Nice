@@ -251,6 +251,22 @@ class Router{
             }
         });
 
+        R::get('/dataPendientes', function(){
+            if(isset($_SESSION['user_name'])){
+                call_user_func(array(SOLICITUD,'showPendientes'));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
+        R::get('/dataSolicitud', function(){
+            if(isset($_SESSION['user_name'])){
+                call_user_func_array(array(SOLICITUD,'showData'),array('PENDIENTE'));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
         R::post('/dataEmpleadoUser', function(){
             if(isset($_SESSION['user_name'])){
                 $arg = $_POST;

@@ -39,8 +39,19 @@ use Model\DetalleSolicitud as detalle;
 
         }
 
-        public function pendientes(){
+        public function showData(){
 
+        }
+
+        public function showPendientes(){
+            $sol = new solicitud();
+            $lista = \mysqli_fetch_all($sol->mostrarPendiente());
+
+            if(count($lista) == 0){
+                echo "";
+            }else{
+                echo json_encode($lista);
+            }
         }
 
     }

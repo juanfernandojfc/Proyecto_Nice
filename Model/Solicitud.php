@@ -164,7 +164,16 @@ namespace Model;
         }
 
         public function mostrar(){
-            $sql = "SELECT  FROM solicitud";
+            $sql = "SELECT * FROM solicitud";
+            $datos = $this->con->consultaRetorno($sql);
+            return $datos;
+        }
+
+        public function mostrarPendiente(){
+            $sql = "SELECT s.idSolicitud, d.nombreDepen, s.tipoSolicitud, s.fechaSolicitud 
+                    FROM solicitud AS s 
+                    INNER JOIN dependencia AS d ON d.idDepen=s.idDepen
+                    WHERE estadoSolicitud = 'PENDIENTE'";
             $datos = $this->con->consultaRetorno($sql);
             return $datos;
         }
