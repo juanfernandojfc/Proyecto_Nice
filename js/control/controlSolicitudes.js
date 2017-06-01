@@ -59,6 +59,7 @@ function cargarTablaPend(){
 }
 
 function activateModPend(id){
+    //dd
     $("#detalleSol").modal();
 }
 
