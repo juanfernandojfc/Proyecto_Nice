@@ -54,6 +54,17 @@ use Model\DetalleSolicitud as detalle;
             }
         }
 
+        public function detalleSolicitud($id){
+            $detalle = new detalle();
+            $lista = \mysqli_fetch_all($detalle->detalleSol($id['id']));
+
+            if(count($lista) == 0){
+                echo "";
+            }else{
+                echo json_encode($lista);
+            }
+        }
+
     }
 
 ?>

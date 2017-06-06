@@ -259,6 +259,15 @@ class Router{
             }
         });
 
+        R::post('/dataDetalleSol', function(){
+            if(isset($_SESSION['user_name'])){
+                $arg = $_POST;
+                call_user_func_array(array(SOLICITUD,'detalleSolicitud'),array($arg));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
         R::get('/dataSolicitud', function(){
             if(isset($_SESSION['user_name'])){
                 call_user_func_array(array(SOLICITUD,'showData'),array('PENDIENTE'));

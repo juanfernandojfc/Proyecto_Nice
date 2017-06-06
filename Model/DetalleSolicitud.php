@@ -71,6 +71,15 @@ namespace Model;
             return $this->con->consultaRetorno($sql);
         }
 
+        public function detalleSol($id){
+            $sql = "SELECT d.idSolicitud, s.idSuministro, s.referenciaSum, s.nombreSum, s.stock, s.tipo 
+                    FROM detalle_solicitud AS d 
+                    INNER JOIN suministro AS s ON s.idSuministro=d.IdSuministro
+                    WHERE d.idSolicitud = $id";
+            $datos = $this->con->consultaRetorno($sql);
+            return $datos;
+        }
+
     }
 
 ?>

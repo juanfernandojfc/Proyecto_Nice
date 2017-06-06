@@ -59,8 +59,37 @@ function cargarTablaPend(){
 }
 
 function activateModPend(id){
-    //dd
     $("#detalleSol").modal();
+
+    $.ajax({
+        url: "/dataDetalleSol",
+        type: "POST",
+        data:{'id': id},
+        cache: "false",
+        success: function (data) {
+            if (data == "") {
+
+            } else {
+
+                data = JSON.parse(data);
+
+                /*
+                $("#idEmp-mod").val(data[0][0]);
+                $("#idUser-mod").val(data[0][1]);
+                $("#cedulaEmp-mod").val(data[0][2]);
+                $("#nombreEmp-mod").val(data[0][3]);
+                $("#apellidoEmp-mod").val(data[0][4]);
+                $("#emailEmp-mod").val(data[0][5]);
+                $("#telefonoEmp-mod").val(data[0][6]);
+                $("#usuarioEmp-mod").val(data[0][8]);
+                $("#rolEmp-mod").append('<option disabled selected>'+ data[0][11] +'</option>');
+                depenMod(data[0][12],data[0][13]);
+                */
+
+            }
+        }
+    });
+
 }
 
 $(function () {
