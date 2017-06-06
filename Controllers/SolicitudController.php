@@ -72,6 +72,12 @@ use Model\DetalleSolicitud as detalle;
             }
         }
 
+        public function denegarSolicitud($id){
+            $sol = new solicitud();
+            $resp = $sol->updateEstado($id['id'],"DENEGADA");
+            echo $resp;
+        }
+
     }
 
 ?>

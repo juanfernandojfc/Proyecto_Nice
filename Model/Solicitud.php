@@ -180,6 +180,11 @@ namespace Model;
             return $datos;
         }
 
+        public function updateEstado($id,$stade){
+            $sql = "UPDATE solicitud SET estadoSolicitud='{$stade}' WHERE idSolicitud= '{$id}'";
+            return $this->con->consultaRetorno($sql);
+        }
+
 
     }
 

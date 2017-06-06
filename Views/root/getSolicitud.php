@@ -71,7 +71,7 @@
                   </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-warning">Aceptar Solicitud</button>
-                      <button type="button" class="btn btn-danger" id="denSoli" onclick=denegarSoli()>Rechazar</button>
+                      <button type="button" class="btn btn-danger" id="denSoli" onclick=denegarSolicitud()>Rechazar</button>
                       <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
                   </div>
               </div>

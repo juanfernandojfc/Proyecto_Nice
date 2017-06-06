@@ -374,6 +374,15 @@ class Router{
             }
         });
 
+        R::post('/denSolicitud', function(){
+            if(isset($_SESSION['user_name'])){
+                $arg = $_POST;
+                call_user_func_array(array(SOLICITUD,'denegarSolicitud'),array($arg));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
         R::post('/updateEmpleado', function(){
             if(isset($_SESSION['user_name'])){
                 $arg = $_POST;

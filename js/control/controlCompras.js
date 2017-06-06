@@ -75,6 +75,7 @@ function activateModCompra(id){
                     '<th><i class="icon_id-2"></i> Referencia</th>'+
                     '<th><i class="icon_folder"></i> Nombre</th>'+
                     '<th><i class="icon_datareport"></i> Cantidad</th>'+
+                    '<th><i class="icon_tag"></i> Valor unitario ($)</th>'+
                     '<th><i class="icon_ribbon"></i> Tipo</th>'+
                     '</tr>'+
                     '</thead>'+
@@ -88,6 +89,7 @@ function activateModCompra(id){
                         '<td>'+ item[2] +'</td>' +
                         '<td>'+ item[3] +'</td>' +
                         '<td>'+ item[4] +'</td>' +
+                        '<td>'+ item[6] +'</td>' +
                         '<td>'+ item[5] +'</td>' +
                         '</tr>';
                 });

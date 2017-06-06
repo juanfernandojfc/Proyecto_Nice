@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab5cc4cd-9685-4d10-be8b-c04c82e02609" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/control/controlCompras.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Router.php" afterPath="$PROJECT_DIR$/Config/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/CompraController.php" afterPath="$PROJECT_DIR$/Controllers/CompraController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/SolicitudController.php" afterPath="$PROJECT_DIR$/Controllers/SolicitudController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Compra.php" afterPath="$PROJECT_DIR$/Model/Compra.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/DetalleCompra.php" afterPath="$PROJECT_DIR$/Model/DetalleCompra.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/DetalleSolicitud.php" afterPath="$PROJECT_DIR$/Model/DetalleSolicitud.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Solicitud.php" afterPath="$PROJECT_DIR$/Model/Solicitud.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/js.php" afterPath="$PROJECT_DIR$/Views/js.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/root/getCompra.php" afterPath="$PROJECT_DIR$/Views/root/getCompra.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/root/getSolicitud.php" afterPath="$PROJECT_DIR$/Views/root/getSolicitud.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/control/controlCompras.js" afterPath="$PROJECT_DIR$/js/control/controlCompras.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/control/controlSolicitudes.js" afterPath="$PROJECT_DIR$/js/control/controlSolicitudes.js" />
     </list>
     <ignored path="Proyecto_Nice.iws" />
@@ -42,103 +37,7 @@
     <favorites_list name="Proyecto_Nice" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="controlCompras.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/control/controlCompras.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-              <folding>
-                <element signature="n#!!doc;n#cargarTablaCompras#0" expanded="false" />
-                <element signature="n#!!block;n#cargarTablaCompras#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controlSolicitudes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/control/controlSolicitudes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc;n#cargarTablaPend#0" expanded="false" />
-                <element signature="n#!!block;n#cargarTablaSolicitud#0" expanded="false" />
-                <element signature="n#!!block;n#activateModSol#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controlEmpleado.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/control/controlEmpleado.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#estadoEmp#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getSolicitud.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/root/getSolicitud.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getCompra.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/root/getCompra.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="28" column="70" lean-forward="true" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompraController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/CompraController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="74" column="62" lean-forward="false" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SolicitudController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/SolicitudController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="71" column="13" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="71" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetalleCompra.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/DetalleCompra.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="92" column="37" lean-forward="false" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
-              <folding>
-                <marker date="1496780331000" expanded="true" signature="1708:1893" ph="INSERT INTO detalle_compra... " />
-                <marker date="1496780331000" expanded="true" signature="2025:2274" ph="SELECT d.idC... detalle_compra" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -200,18 +99,18 @@
         <option value="$PROJECT_DIR$/Views/root/getPendientes.php" />
         <option value="$PROJECT_DIR$/js/control/controlEmpleado.js" />
         <option value="$PROJECT_DIR$/Model/DetalleSolicitud.php" />
-        <option value="$PROJECT_DIR$/Controllers/SolicitudController.php" />
-        <option value="$PROJECT_DIR$/Model/Solicitud.php" />
-        <option value="$PROJECT_DIR$/js/control/controlSolicitudes.js" />
-        <option value="$PROJECT_DIR$/Config/Router.php" />
         <option value="$PROJECT_DIR$/Views/js.php" />
         <option value="$PROJECT_DIR$/Views/root/getEmpleado.php" />
         <option value="$PROJECT_DIR$/Model/Compra.php" />
         <option value="$PROJECT_DIR$/Controllers/CompraController.php" />
-        <option value="$PROJECT_DIR$/Model/DetalleCompra.php" />
         <option value="$PROJECT_DIR$/Views/root/getCompra.php" />
-        <option value="$PROJECT_DIR$/Views/root/getSolicitud.php" />
+        <option value="$PROJECT_DIR$/Model/DetalleCompra.php" />
         <option value="$PROJECT_DIR$/js/control/controlCompras.js" />
+        <option value="$PROJECT_DIR$/Views/root/getSolicitud.php" />
+        <option value="$PROJECT_DIR$/Config/Router.php" />
+        <option value="$PROJECT_DIR$/Model/Solicitud.php" />
+        <option value="$PROJECT_DIR$/Controllers/SolicitudController.php" />
+        <option value="$PROJECT_DIR$/js/control/controlSolicitudes.js" />
       </list>
     </option>
   </component>
@@ -513,7 +412,7 @@
       <workItem from="1496347020319" duration="777000" />
       <workItem from="1496352652400" duration="124000" />
       <workItem from="1496760699142" duration="2725000" />
-      <workItem from="1496767036672" duration="11692000" />
+      <workItem from="1496767036672" duration="14245000" />
     </task>
     <task id="LOCAL-00001" summary="segundo commit">
       <created>1494197860488</created>
@@ -557,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496763569551</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Solicitudes prueba">
+      <created>1496783149547</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496783149547</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311640000" />
+    <option name="totallyTimeSpent" value="314193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,9 +480,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1859375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1859375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -715,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="134" column="8" lean-forward="false" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/ProveedorController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -833,29 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Empleado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="180" column="9" lean-forward="true" selection-start-line="180" selection-start-column="9" selection-end-line="180" selection-end-column="9" />
-          <folding>
-            <marker date="1495337667000" expanded="true" signature="3054:3282" ph="SELECT e.idE... empleado" />
-            <marker date="1495337667000" expanded="true" signature="3417:3941" ph="SELECT e.idE... empleado" />
-            <marker date="1495337667000" expanded="true" signature="4075:4350" ph="INSERT INTO empleado... " />
-            <marker date="1495337667000" expanded="true" signature="4441:4621" ph="UPDATE emple... " />
-            <marker date="1495337667000" expanded="true" signature="4704:4767" ph="SELECT * FRO... empleado" />
-            <marker date="1495337667000" expanded="true" signature="4930:4980" ph="SELECT MAX(i... empleado" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/EmpleadoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="83" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/DependenciaController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
@@ -893,67 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Solicitud.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="176" column="70" lean-forward="true" selection-start-line="176" selection-start-column="51" selection-end-line="176" selection-end-column="70" />
-          <folding>
-            <marker date="1496773955000" expanded="true" signature="3246:3403" ph="INSERT INTO solicitud... " />
-            <marker date="1496773955000" expanded="true" signature="3525:3578" ph="SELECT MAX(i... solicitud" />
-            <marker date="1496773955000" expanded="true" signature="3777:3881" ph="SELECT * FRO... solicitud" />
-            <marker date="1496773955000" expanded="true" signature="3777:3993" ph="SELECT s.idS... solicitud" />
-            <marker date="1496773955000" expanded="true" signature="4154:4393" ph="SELECT s.idS... solicitud" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="278" column="28" lean-forward="true" selection-start-line="278" selection-start-column="28" selection-end-line="278" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/SolicitudController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="71" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/CompraController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="74" column="62" lean-forward="false" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DetalleSolicitud.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="74" column="104" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="104" />
-          <folding>
-            <marker date="1496768482000" expanded="true" signature="1357:1499" ph="INSERT INTO detalle_solicitud... " />
-            <marker date="1496768482000" expanded="true" signature="1628:1977" ph="SELECT d.idS... detalle_solicitud" />
-            <marker date="1496768482000" expanded="true" signature="1628:1978" ph="SELECT d.idS... detalle_solicitud" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DetalleCompra.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="92" column="37" lean-forward="false" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
-          <folding>
-            <marker date="1496780331000" expanded="true" signature="1708:1893" ph="INSERT INTO detalle_compra... " />
-            <marker date="1496780331000" expanded="true" signature="2025:2274" ph="SELECT d.idC... detalle_compra" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/root/setCompra.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
@@ -986,16 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/control/controlEmpleado.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#estadoEmp#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/root/getCompra.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1004,10 +808,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DetalleSolicitud.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="74" column="104" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="104" />
+          <folding>
+            <marker date="1496768482000" expanded="true" signature="1357:1499" ph="INSERT INTO detalle_solicitud... " />
+            <marker date="1496768482000" expanded="true" signature="1628:1977" ph="SELECT d.idS... detalle_solicitud" />
+            <marker date="1496768482000" expanded="true" signature="1628:1978" ph="SELECT d.idS... detalle_solicitud" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/CompraController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="74" column="62" lean-forward="false" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/control/controlCompras.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="78" column="64" lean-forward="true" selection-start-line="78" selection-start-column="64" selection-end-line="78" selection-end-column="64" />
+          <folding>
+            <element signature="n#!!doc;n#cargarTablaCompras#0" expanded="false" />
+            <element signature="n#!!block;n#cargarTablaCompras#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DetalleCompra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="92" column="120" lean-forward="false" selection-start-line="92" selection-start-column="120" selection-end-line="92" selection-end-column="120" />
+          <folding>
+            <marker date="1496783276000" expanded="true" signature="1708:1893" ph="INSERT INTO detalle_compra... " />
+            <marker date="1496783276000" expanded="true" signature="2025:2291" ph="SELECT d.idC... detalle_compra" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/control/controlEmpleado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Solicitud.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding>
+            <marker date="1496784988000" expanded="true" signature="3246:3403" ph="INSERT INTO solicitud... " />
+            <marker date="1496784988000" expanded="true" signature="3525:3578" ph="SELECT MAX(i... solicitud" />
+            <marker date="1496784988000" expanded="true" signature="3777:3881" ph="SELECT * FRO... solicitud" />
+            <marker date="1496784988000" expanded="true" signature="3777:3993" ph="SELECT s.idS... solicitud" />
+            <marker date="1496784988000" expanded="true" signature="4154:4393" ph="SELECT s.idS... solicitud" />
+            <marker date="1496784988000" expanded="true" signature="4560:4634" ph="UPDATE solic... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/SolicitudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/EmpleadoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Empleado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="170" column="44" lean-forward="true" selection-start-line="170" selection-start-column="44" selection-end-line="170" selection-end-column="44" />
+          <folding>
+            <marker date="1495337667000" expanded="true" signature="3054:3282" ph="SELECT e.idE... empleado" />
+            <marker date="1495337667000" expanded="true" signature="3417:3941" ph="SELECT e.idE... empleado" />
+            <marker date="1495337667000" expanded="true" signature="4075:4350" ph="INSERT INTO empleado... " />
+            <marker date="1495337667000" expanded="true" signature="4441:4621" ph="UPDATE emple... " />
+            <marker date="1495337667000" expanded="true" signature="4704:4767" ph="SELECT * FRO... empleado" />
+            <marker date="1495337667000" expanded="true" signature="4930:4980" ph="SELECT MAX(i... empleado" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="139" column="62" lean-forward="false" selection-start-line="139" selection-start-column="62" selection-end-line="139" selection-end-column="62" />
+          <folding>
+            <marker date="1495337667000" expanded="true" signature="2397:2418" ph="SELECT * FRO... usuario" />
+            <marker date="1495337667000" expanded="true" signature="2527:2649" ph="INSERT INTO usuario... " />
+            <marker date="1495337667000" expanded="true" signature="2744:2819" ph="UPDATE usuar... " />
+            <marker date="1495337667000" expanded="true" signature="2930:3004" ph="UPDATE usuar... " />
+            <marker date="1495337667000" expanded="true" signature="3117:3195" ph="UPDATE usuar... " />
+            <marker date="1495337667000" expanded="true" signature="3277:3329" ph="SELECT * FRO... usuario" />
+            <marker date="1495337667000" expanded="true" signature="3492:3533" ph="SELECT MAX(i... usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/control/controlSolicitudes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="245" column="31" lean-forward="true" selection-start-line="245" selection-start-column="31" selection-end-line="245" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc;n#cargarTablaPend#0" expanded="false" />
+            <element signature="n#!!block;n#activateModSol#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Views/root/getSolicitud.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="406">
+          <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#!!top" expanded="false" />
@@ -1015,26 +942,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/control/controlSolicitudes.js">
+    <entry file="file://$PROJECT_DIR$/Config/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#cargarTablaPend#0" expanded="false" />
-            <element signature="n#!!block;n#cargarTablaSolicitud#0" expanded="false" />
-            <element signature="n#!!block;n#activateModSol#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/control/controlCompras.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc;n#cargarTablaCompras#0" expanded="false" />
-            <element signature="n#!!block;n#cargarTablaCompras#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="531">
+          <caret line="381" column="52" lean-forward="true" selection-start-line="381" selection-start-column="52" selection-end-line="381" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

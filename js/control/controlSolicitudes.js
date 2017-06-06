@@ -9,7 +9,8 @@ function cargarTablaPend(){
         cache: "false",
         success: function (data) {
             if (data == "") {
-
+                var n = '<h1>NO HAY SOLICITUDES PENDIENTES</h1>';
+                $("#secTablaPendientes").append(n);
             } else {
 
                 var table = '<table class="table table-advance table-hover" id="id-tablePend">'+
@@ -131,6 +132,7 @@ function cargarTablaSolicitud(){
 function activateModPend(id){
     $("#detallePend").modal();
     $("#secPenDetalle").empty();
+    $("#idSolicitud").val(id);
 
     $.ajax({
         url: "/dataDetalleSol",
@@ -221,6 +223,40 @@ function activateModSol(id){
             }
         }
     });
+}
+
+function denegarSolicitud(){
+
+    swal({
+            title: "¿Desea rechazar la solicitud?",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#4cd964",
+            cancelButtonText: "No",
+            confirmButtonText: "Sí, deseo hacerlo",
+            closeOnConfirm: false
+        },
+        function(){
+            idSol=$("#idSolicitud").val();
+
+            $.ajax({
+                url: "/denSolicitud",
+                type: "POST",
+                data:{'id': idSol},
+                cache: "false",
+                success: function (data) {
+                    if(data=="1"){
+                        swal("¡HECHO!","¡Solicitud Rechazada!","success");
+                        $("#secTablaSolicitudes").empty();
+                        cargarTablaSolicitud();
+                        cargarTablaPend();
+                    }else{
+                        swal("ERROR",data,"error");
+                    }
+                }
+            });
+        });
+
 }
 
 $(function () {

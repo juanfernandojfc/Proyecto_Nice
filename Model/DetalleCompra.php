@@ -90,7 +90,7 @@ namespace Model;
         }
 
         public function detalleCompra($id){
-            $sql = "SELECT d.idCompra, s.idSuministro, s.referenciaSum, s.nombreSum, d.cantidad, s.tipo
+            $sql = "SELECT d.idCompra, s.idSuministro, s.referenciaSum, s.nombreSum, d.cantidad, s.tipo, d.valorUnitario
                     FROM detalle_compra AS d 
                     INNER JOIN suministro AS s ON s.idSuministro=d.IdSuministro
                     WHERE d.idCompra = $id";
