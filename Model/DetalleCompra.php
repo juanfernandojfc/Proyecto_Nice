@@ -88,5 +88,14 @@ namespace Model;
             VALUES ('{$this->idSuministro}','{$this->idCompra}','{$this->cantidad}','{$this->valorUnitario}')";
             return $this->con->consultaRetorno($sql);
         }
+
+        public function detalleCompra($id){
+            $sql = "SELECT d.idCompra, s.idSuministro, s.referenciaSum, s.nombreSum, d.cantidad, s.tipo
+                    FROM detalle_compra AS d 
+                    INNER JOIN suministro AS s ON s.idSuministro=d.IdSuministro
+                    WHERE d.idCompra = $id";
+            $datos = $this->con->consultaRetorno($sql);
+            return $datos;
+        }
     }
 ?>

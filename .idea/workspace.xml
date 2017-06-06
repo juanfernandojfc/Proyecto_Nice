@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab5cc4cd-9685-4d10-be8b-c04c82e02609" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/control/controlCompras.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Router.php" afterPath="$PROJECT_DIR$/Config/Router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/CompraController.php" afterPath="$PROJECT_DIR$/Controllers/CompraController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/SolicitudController.php" afterPath="$PROJECT_DIR$/Controllers/SolicitudController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Compra.php" afterPath="$PROJECT_DIR$/Model/Compra.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/DetalleCompra.php" afterPath="$PROJECT_DIR$/Model/DetalleCompra.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/DetalleSolicitud.php" afterPath="$PROJECT_DIR$/Model/DetalleSolicitud.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Solicitud.php" afterPath="$PROJECT_DIR$/Model/Solicitud.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/js.php" afterPath="$PROJECT_DIR$/Views/js.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/root/getCompra.php" afterPath="$PROJECT_DIR$/Views/root/getCompra.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/root/getSolicitud.php" afterPath="$PROJECT_DIR$/Views/root/getSolicitud.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/control/controlSolicitudes.js" afterPath="$PROJECT_DIR$/js/control/controlSolicitudes.js" />
     </list>
     <ignored path="Proyecto_Nice.iws" />
@@ -35,12 +43,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmpleadoController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/EmpleadoController.php">
+      <file leaf-file-name="controlCompras.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/control/controlCompras.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="83" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+              <folding>
+                <element signature="n#!!doc;n#cargarTablaCompras#0" expanded="false" />
+                <element signature="n#!!block;n#cargarTablaCompras#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controlSolicitudes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/control/controlSolicitudes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc;n#cargarTablaPend#0" expanded="false" />
+                <element signature="n#!!block;n#cargarTablaSolicitud#0" expanded="false" />
+                <element signature="n#!!block;n#activateModSol#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controlEmpleado.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/control/controlEmpleado.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-81">
+              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!block;n#estadoEmp#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,8 +85,31 @@
       <file leaf-file-name="getSolicitud.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/root/getSolicitud.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-643">
-              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="271">
+              <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getCompra.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/root/getCompra.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="28" column="70" lean-forward="true" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompraController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/CompraController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="74" column="62" lean-forward="false" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -58,60 +118,22 @@
       <file leaf-file-name="SolicitudController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/SolicitudController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+            <state relative-caret-position="485">
+              <caret line="71" column="13" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="71" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DetalleSolicitud.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/DetalleSolicitud.php">
+      <file leaf-file-name="DetalleCompra.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/DetalleCompra.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="74" column="103" lean-forward="false" selection-start-line="74" selection-start-column="103" selection-end-line="74" selection-end-column="103" />
+            <state relative-caret-position="381">
+              <caret line="92" column="37" lean-forward="false" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
               <folding>
-                <marker date="1496763111000" expanded="true" signature="1357:1499" ph="INSERT INTO detalle_solicitud... " />
-                <marker date="1496763111000" expanded="true" signature="1628:1883" ph="SELECT d.idS... detalle_solicitud" />
-                <marker date="1496763111000" expanded="true" signature="1628:1884" ph="SELECT d.idS... detalle_solicitud" />
+                <marker date="1496780331000" expanded="true" signature="1708:1893" ph="INSERT INTO detalle_compra... " />
+                <marker date="1496780331000" expanded="true" signature="2025:2274" ph="SELECT d.idC... detalle_compra" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Solicitud.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Solicitud.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="177" column="26" lean-forward="false" selection-start-line="172" selection-start-column="12" selection-end-line="177" selection-end-column="26" />
-              <folding>
-                <marker date="1495337667000" expanded="true" signature="3246:3403" ph="INSERT INTO solicitud... " />
-                <marker date="1495337667000" expanded="true" signature="3525:3578" ph="SELECT MAX(i... solicitud" />
-                <marker date="1495337667000" expanded="true" signature="3777:3800" ph="SELECT * FRO... solicitud" />
-                <marker date="1495337667000" expanded="true" signature="3961:4200" ph="SELECT s.idS... solicitud" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controlSolicitudes.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/control/controlSolicitudes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
-              <folding>
-                <element signature="n#!!doc;n#cargarTablaPend#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/Router.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="267" column="13" lean-forward="true" selection-start-line="267" selection-start-column="13" selection-end-line="267" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -139,8 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Views/root/getSuministro.php" />
-        <option value="$USER_HOME$/Downloads/NiceAdmin/NiceAdmin/css/bootstrap-theme.css" />
         <option value="$PROJECT_DIR$/css/bootstrap-theme.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/Views/root/setSuministro.php" />
@@ -154,7 +174,6 @@
         <option value="$PROJECT_DIR$/js/control/controlAddDependencia.js" />
         <option value="$PROJECT_DIR$/js/control/controlProveedor.js" />
         <option value="$PROJECT_DIR$/Model/User.php" />
-        <option value="$PROJECT_DIR$/Views/root/getEmpleado.php" />
         <option value="$PROJECT_DIR$/Model/Dependencia.php" />
         <option value="$PROJECT_DIR$/Controllers/EmpleadoController.php" />
         <option value="$PROJECT_DIR$/Views/root/setEmpleado.php" />
@@ -169,27 +188,30 @@
         <option value="$PROJECT_DIR$/Views/root/setCompra.php" />
         <option value="$PROJECT_DIR$/Model/Ofimatico.php" />
         <option value="$PROJECT_DIR$/Model/Suministro.php" />
-        <option value="$PROJECT_DIR$/Controllers/CompraController.php" />
         <option value="$PROJECT_DIR$/Views/root/setSolicitud.php" />
         <option value="$PROJECT_DIR$/js/control/controlAddCompra.js" />
         <option value="$PROJECT_DIR$/js/control/controlAddSolicitud.js" />
         <option value="$PROJECT_DIR$/js/control/login.js" />
         <option value="$PROJECT_DIR$/Model/Empleado.php" />
         <option value="$PROJECT_DIR$/Model/Proveedor.php" />
-        <option value="$PROJECT_DIR$/Model/DetalleCompra.php" />
-        <option value="$PROJECT_DIR$/Model/Compra.php" />
         <option value="$PROJECT_DIR$/Views/mainViews.php" />
         <option value="$PROJECT_DIR$/js/control/controlSolPendientes.js" />
         <option value="$PROJECT_DIR$/Views/root/menu.php" />
         <option value="$PROJECT_DIR$/Views/root/getPendientes.php" />
-        <option value="$PROJECT_DIR$/Views/js.php" />
         <option value="$PROJECT_DIR$/js/control/controlEmpleado.js" />
-        <option value="$PROJECT_DIR$/Model/Solicitud.php" />
-        <option value="$PROJECT_DIR$/Views/root/getSolicitud.php" />
         <option value="$PROJECT_DIR$/Model/DetalleSolicitud.php" />
-        <option value="$PROJECT_DIR$/Config/Router.php" />
         <option value="$PROJECT_DIR$/Controllers/SolicitudController.php" />
+        <option value="$PROJECT_DIR$/Model/Solicitud.php" />
         <option value="$PROJECT_DIR$/js/control/controlSolicitudes.js" />
+        <option value="$PROJECT_DIR$/Config/Router.php" />
+        <option value="$PROJECT_DIR$/Views/js.php" />
+        <option value="$PROJECT_DIR$/Views/root/getEmpleado.php" />
+        <option value="$PROJECT_DIR$/Model/Compra.php" />
+        <option value="$PROJECT_DIR$/Controllers/CompraController.php" />
+        <option value="$PROJECT_DIR$/Model/DetalleCompra.php" />
+        <option value="$PROJECT_DIR$/Views/root/getCompra.php" />
+        <option value="$PROJECT_DIR$/Views/root/getSolicitud.php" />
+        <option value="$PROJECT_DIR$/js/control/controlCompras.js" />
       </list>
     </option>
   </component>
@@ -277,14 +299,74 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto_Nice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto_Nice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="control" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto_Nice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto_Nice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto_Nice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto_Nice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto_Nice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Proyecto_Nice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,6 +399,17 @@
     </configuration>
     <configuration default="false" name="Proyecto_Nice" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -419,7 +512,8 @@
       <workItem from="1496293228536" duration="856000" />
       <workItem from="1496347020319" duration="777000" />
       <workItem from="1496352652400" duration="124000" />
-      <workItem from="1496760699142" duration="2655000" />
+      <workItem from="1496760699142" duration="2725000" />
+      <workItem from="1496767036672" duration="11692000" />
     </task>
     <task id="LOCAL-00001" summary="segundo commit">
       <created>1494197860488</created>
@@ -456,11 +550,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496293539389</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Solicitudes prueba">
+      <created>1496763569551</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496763569551</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299878000" />
+    <option name="totallyTimeSpent" value="311640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,7 +604,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19085173" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1859375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -533,36 +634,16 @@
     <MESSAGE value="cuarto" />
     <MESSAGE value="cambios en solicitudes" />
     <MESSAGE value="un monton de cambios" />
-    <option name="LAST_COMMIT_MESSAGE" value="un monton de cambios" />
+    <MESSAGE value="Solicitudes prueba" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solicitudes prueba" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="39" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/control/controlProveedor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/control/controlAddProveedor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/root/setEmpleado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/root/setSuministro.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
@@ -634,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/DependenciaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -652,27 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DetalleCompra.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="82" column="50" lean-forward="false" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Compra.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="131" column="5" lean-forward="true" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/CompraController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="56" column="4" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -695,13 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -737,24 +783,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/root/getPendientes.php" />
     <entry file="file://$PROJECT_DIR$/js/control/controlSolPendientes.js" />
-    <entry file="file://$PROJECT_DIR$/Views/js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="54" column="77" lean-forward="false" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Proveedor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="131" column="4" lean-forward="false" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/root/getEmpleado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -786,25 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/root/getCompra.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="85" lean-forward="false" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/control/controlAddSuministro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="67" column="62" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/root/setCompra.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,27 +830,6 @@
         <state relative-caret-position="468">
           <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/root/getSolicitud.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-643">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Solicitud.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="177" column="26" lean-forward="false" selection-start-line="172" selection-start-column="12" selection-end-line="177" selection-end-column="26" />
-          <folding>
-            <marker date="1495337667000" expanded="true" signature="3246:3403" ph="INSERT INTO solicitud... " />
-            <marker date="1495337667000" expanded="true" signature="3525:3578" ph="SELECT MAX(i... solicitud" />
-            <marker date="1495337667000" expanded="true" signature="3777:3800" ph="SELECT * FRO... solicitud" />
-            <marker date="1495337667000" expanded="true" signature="3961:4200" ph="SELECT s.idS... solicitud" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -854,59 +850,190 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/EmpleadoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="76" column="12" lean-forward="false" selection-start-line="76" selection-start-column="12" selection-end-line="83" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DetalleSolicitud.php">
+    <entry file="file://$PROJECT_DIR$/Controllers/DependenciaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="74" column="103" lean-forward="false" selection-start-line="74" selection-start-column="103" selection-end-line="74" selection-end-column="103" />
+        <state relative-caret-position="693">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Compra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="135" column="66" lean-forward="false" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="66" />
           <folding>
-            <marker date="1496763111000" expanded="true" signature="1357:1499" ph="INSERT INTO detalle_solicitud... " />
-            <marker date="1496763111000" expanded="true" signature="1628:1883" ph="SELECT d.idS... detalle_solicitud" />
-            <marker date="1496763111000" expanded="true" signature="1628:1884" ph="SELECT d.idS... detalle_solicitud" />
+            <marker date="1496779216000" expanded="true" signature="2362:2538" ph="INSERT INTO compra... " />
+            <marker date="1496779216000" expanded="true" signature="2660:2704" ph="SELECT MAX(i... compra" />
+            <marker date="1496779216000" expanded="true" signature="2903:2910" ph="SELECT MAX(i... compra" />
+            <marker date="1496779216000" expanded="true" signature="2903:3067" ph="SELECT c.idC... compra" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/SolicitudController.php">
+    <entry file="file://$PROJECT_DIR$/Model/Solicitud.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/control/controlEmpleado.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="149" column="6" lean-forward="true" selection-start-line="124" selection-start-column="4" selection-end-line="149" selection-end-column="6" />
+        <state relative-caret-position="441">
+          <caret line="176" column="70" lean-forward="true" selection-start-line="176" selection-start-column="51" selection-end-line="176" selection-end-column="70" />
           <folding>
-            <element signature="n#!!block;n#estadoEmp#0" expanded="false" />
-            <element signature="n#!!block;n#depenMod#0" expanded="false" />
-            <element signature="n#!!block;n#cargarTablaEmp#0" expanded="false" />
-            <element signature="n#!!block;n#modificarEmp#0" expanded="false" />
+            <marker date="1496773955000" expanded="true" signature="3246:3403" ph="INSERT INTO solicitud... " />
+            <marker date="1496773955000" expanded="true" signature="3525:3578" ph="SELECT MAX(i... solicitud" />
+            <marker date="1496773955000" expanded="true" signature="3777:3881" ph="SELECT * FRO... solicitud" />
+            <marker date="1496773955000" expanded="true" signature="3777:3993" ph="SELECT s.idS... solicitud" />
+            <marker date="1496773955000" expanded="true" signature="4154:4393" ph="SELECT s.idS... solicitud" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="267" column="13" lean-forward="true" selection-start-line="267" selection-start-column="13" selection-end-line="267" selection-end-column="13" />
+        <state relative-caret-position="349">
+          <caret line="278" column="28" lean-forward="true" selection-start-line="278" selection-start-column="28" selection-end-line="278" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/SolicitudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="71" column="13" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="71" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/CompraController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="74" column="62" lean-forward="false" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DetalleSolicitud.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="74" column="104" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="104" />
+          <folding>
+            <marker date="1496768482000" expanded="true" signature="1357:1499" ph="INSERT INTO detalle_solicitud... " />
+            <marker date="1496768482000" expanded="true" signature="1628:1977" ph="SELECT d.idS... detalle_solicitud" />
+            <marker date="1496768482000" expanded="true" signature="1628:1978" ph="SELECT d.idS... detalle_solicitud" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DetalleCompra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="92" column="37" lean-forward="false" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
+          <folding>
+            <marker date="1496780331000" expanded="true" signature="1708:1893" ph="INSERT INTO detalle_compra... " />
+            <marker date="1496780331000" expanded="true" signature="2025:2274" ph="SELECT d.idC... detalle_compra" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/root/setCompra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/root/setEmpleado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/root/getEmpleado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/control/controlProveedor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="123" column="25" lean-forward="false" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/control/controlEmpleado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#estadoEmp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/root/getCompra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="28" column="70" lean-forward="true" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/root/getSolicitud.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/control/controlSolicitudes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        <state relative-caret-position="227">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#cargarTablaPend#0" expanded="false" />
+            <element signature="n#!!block;n#cargarTablaSolicitud#0" expanded="false" />
+            <element signature="n#!!block;n#activateModSol#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/control/controlCompras.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc;n#cargarTablaCompras#0" expanded="false" />
+            <element signature="n#!!block;n#cargarTablaCompras#0" expanded="false" />
           </folding>
         </state>
       </provider>

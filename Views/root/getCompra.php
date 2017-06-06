@@ -12,58 +12,36 @@
         </div>
       </div>
       <div class="row">
-            <div class="col-lg-12">
-                <section class="panel">
-                    <header class="panel-heading">
-                    </header>
-                    
-                    <table class="table table-advance table-hover">
-                     <tbody>
-                        <tr>
-                           <th><i class="icon_id-2"></i> ID de Compra</th>
-                           <th><i class="icon_calendar"></i> Fecha de Compra</th>
-                           <th><i class="ion_cogs"></i> Vista de Compra</th>
-                        </tr>
-                        <tr>
-                           <td>0001</td>
-                           <td>22/10/2016</td>
-                           <td>
-                           <div class="btn-group">
-                                <a class="btn btn-primary" href="#"><i class="ion-eye"></i> Detalles</a>
-                            </div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>0002</td>
-                           <td>28/10/2016</td>
-                           <td>
-                           <div class="btn-group">
-                                <a class="btn btn-primary" href="#"><i class="ion-eye"></i> Detalles</a>
-                            </div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>0003</td>
-                           <td>2/11/2016</td>
-                           <td>
-                           <div class="btn-group">
-                                <a class="btn btn-primary" href="#"><i class="ion-eye"></i> Detalles</a>
-                            </div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>0004</td>
-                           <td>30/11/2016</td>
-                           <td>
-                           <div class="btn-group">
-                                <a class="btn btn-primary" href="#"><i class="ion-eye"></i> Detalles</a>
-                            </div>
-                           </td>
-                        </tr>                            
-                     </tbody>
-                  </table>
-                </section>
-            </div>
+          <div class="col-lg-12">
+              <section class="panel" id="secTableCompras">
+              </section>
+          </div>
         </div>
     </section>
   </section>
+
+  <div id="detalleCompra" class="modal fade" role="dialog">
+      <div style="width:70%;"  class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header" style="padding:35px 170px;">
+                  <h4 style="text-align:center;" class="modal-title">Detalles de la Compra</h4>
+              </div>
+              <div class="modal-body">
+                  <form class="form-validate form-horizontal">
+                      <div class="form-group">
+                          <div class="col-lg-12">
+                              <section class="panel" id="secCompras">
+                              </section>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
+              </div>
+          </div>
+
+      </div>
+  </div>

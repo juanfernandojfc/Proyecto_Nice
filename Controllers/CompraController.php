@@ -59,6 +59,27 @@ use Model\Suministro as suministro;
             }
         }
 
+        public function showData(){
+            $compra = new compra();
+            $lista = \mysqli_fetch_all($compra->mostrar());
+
+            if(count($lista) == 0){
+                echo "";
+            }else{
+                echo json_encode($lista);
+            }
+        }
+
+        public function detalleCompra($id){
+            $detalle = new detalle();
+            $lista = \mysqli_fetch_all($detalle->detalleCompra($id['id']));
+
+            if(count($lista) == 0){
+                echo "";
+            }else{
+                echo json_encode($lista);
+            }
+        }
     }
 
 ?>

@@ -164,7 +164,9 @@ namespace Model;
         }
 
         public function mostrar(){
-            $sql = "SELECT * FROM solicitud";
+            $sql = "SELECT s.idSolicitud, s.estadoSolicitud,s.fechaSolicitud, s.fechaEntrega, d.nombreDepen, s.tipoSolicitud
+                    FROM solicitud AS s 
+                    INNER JOIN dependencia AS d ON d.idDepen=s.idDepen";
             $datos = $this->con->consultaRetorno($sql);
             return $datos;
         }

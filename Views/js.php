@@ -53,6 +53,7 @@
     <script src="<?php echo DIR;?>js/control/controlAddCompra.js"></script>
     <script src="<?php echo DIR;?>js/control/controlAddSolicitud.js"></script>
     <script src="<?php echo DIR;?>js/control/controlSolicitudes.js"></script>
+    <script src="<?php echo DIR;?>js/control/controlCompras.js"></script>
 
     <script src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 

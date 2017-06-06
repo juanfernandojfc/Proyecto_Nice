@@ -251,6 +251,22 @@ class Router{
             }
         });
 
+        R::get('/dataSolicitudes', function(){
+            if(isset($_SESSION['user_name'])){
+                call_user_func(array(SOLICITUD,'showData'));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
+        R::get('/dataCompras', function(){
+            if(isset($_SESSION['user_name'])){
+                call_user_func(array(COMPRA,'showData'));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
         R::get('/dataPendientes', function(){
             if(isset($_SESSION['user_name'])){
                 call_user_func(array(SOLICITUD,'showPendientes'));
@@ -263,6 +279,15 @@ class Router{
             if(isset($_SESSION['user_name'])){
                 $arg = $_POST;
                 call_user_func_array(array(SOLICITUD,'detalleSolicitud'),array($arg));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
+        R::post('/dataDetalleCompra', function(){
+            if(isset($_SESSION['user_name'])){
+                $arg = $_POST;
+                call_user_func_array(array(COMPRA,'detalleCompra'),array($arg));
             }else{
                 call_user_func(array(HOME,'index'));
             }

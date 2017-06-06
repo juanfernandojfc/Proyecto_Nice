@@ -44,6 +44,41 @@
             </section>
       </section>
 
+      <div id="detallePend" class="modal fade" role="dialog">
+          <div style="width:70%;"  class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header" style="padding:35px 170px;">
+                      <h4 style="text-align:center;" class="modal-title">Detalles de Solicitud</h4>
+                  </div>
+                  <div class="modal-body">
+                      <form class="form-validate form-horizontal">
+                          <div class="form-group">
+                              <label for="cemail" class="control-label col-lg-1">Descripción <span class="required"></span></label>
+                              <div class="col-lg-4" id="idDiv">
+                                  <textarea style="resize:none;" rows="5" class="form-control" id="descripcion-pend" disabled ></textarea>
+                                  <input id="idSolicitud" hidden>;
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <div class="col-lg-12">
+                                  <section class="panel" id="secPenDetalle">
+                                  </section>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-warning">Aceptar Solicitud</button>
+                      <button type="button" class="btn btn-danger" id="denSoli" onclick=denegarSoli()>Rechazar</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
       <div id="detalleSol" class="modal fade" role="dialog">
           <div style="width:70%;"  class="modal-dialog">
 
@@ -57,24 +92,13 @@
                           <div class="form-group">
                               <label for="cemail" class="control-label col-lg-1">Descripción <span class="required"></span></label>
                               <div class="col-lg-4">
-                                  <textarea style="resize:none;" rows="5" class="form-control" id="descripcion-pend" disabled ></textarea>
+                                  <textarea style="resize:none;" rows="5" class="form-control" id="descripcion-sol" disabled ></textarea>
                               </div>
                           </div>
                           <div class="form-group">
-                              <h5 for="cemail" class="control-label col-lg-1">Suministros</h5>
-                              <div class="col-lg-8">
-                                  <table class="table table-advance table-hover" id="id-sumPend">
-                                      <thead>
-                                      <tr>
-                                          <th><i class="icon_id-2"></i> Referencia</th>
-                                          <th><i class="icon_folder"></i> Nombre</th>
-                                          <th><i class="icon_datareport"></i> Cantidad</th>
-                                          <th><i class="icon_ribbon"></i> Tipo</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody id="sumPend">
-                                      </tbody>
-                                  </table>
+                              <div class="col-lg-12">
+                                  <section class="panel" id="secSolicitudes">
+                                  </section>
                               </div>
                           </div>
                       </form>

@@ -40,7 +40,14 @@ use Model\DetalleSolicitud as detalle;
         }
 
         public function showData(){
+            $sol = new solicitud();
+            $lista = \mysqli_fetch_all($sol->mostrar());
 
+            if(count($lista) == 0){
+                echo "";
+            }else{
+                echo json_encode($lista);
+            }
         }
 
         public function showPendientes(){

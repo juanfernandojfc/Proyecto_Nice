@@ -129,5 +129,13 @@ namespace Model;
             $datos = $datos->fetch_array();
             return $datos[0];
         }
+
+        public function mostrar(){
+            $sql = "SELECT c.idCompra, c.fechaCompra, p.nombreProv,c.valorTotal 
+                    FROM compra as c
+                    INNER JOIN proveedor AS p ON p.idProv=c.idProv";
+            $datos = $this->con->consultaRetorno($sql);
+            return $datos;
+        }
     }
 ?>

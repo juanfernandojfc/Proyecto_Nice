@@ -58,8 +58,79 @@ function cargarTablaPend(){
 
 }
 
+function cargarTablaSolicitud(){
+    $.ajax({
+        url: "/dataSolicitudes",
+        type: "GET",
+        cache: "false",
+        success: function (data) {
+            if (data == "") {
+
+            } else {
+
+                var stade;
+                var table = '<table class="table table-advance table-hover" id="id-tableSolicitudes">'+
+                    '<thead>'+
+                    '<tr>'+
+                    '<th><i class="icon_archive"></i> Estado</th>'+
+                    '<th><i class="icon_id"></i> ID</th>'+
+                    '<th><i class="icon_calendar"></i> Fecha</th>'+
+                    '<th><i class="icon_calendar"></i> F. Entrega</th>'+
+                    '<th><i class="icon_building"></i> Dependencia</th>'+
+                    '<th><i class="icon_tag"></i> Tipo solicitud</th>'+
+                    '<th><i class="icon_cogs"></i> Acciones</th>'+
+                    '</tr>'+
+                    '</thead>'+
+                    '<tbody id="tablePend">';
+
+
+                data = JSON.parse(data);
+                $.each(data, function (index, item) {
+
+                    switch(item[1]){
+                        case "PENDIENTE":
+                            stade = "btn btn-warning";
+                            break;
+
+                        case "DENEGADA":
+                            stade = "btn btn-danger";
+                            break;
+
+                        case "COMPLETA":
+                            stade = "btn btn-success";
+                            break;
+                    }
+
+                    if(item[3]===null){
+                        item[3] = "SIN REALIZAR";
+                    }
+
+                    table += '<tr id="row' + item[0] + '">' +
+                        '<td>'+
+                        '<a class="'+ stade +'" disabled>'+ item[1] +'</a>'+
+                        '</td>' +
+                        '<td>'+ item[0] +'</td>' +
+                        '<td>'+ item[2] +'</td>' +
+                        '<td>'+ item[3] +'</td>' +
+                        '<td>'+ item[4] +'</td>' +
+                        '<td>'+ item[5] +'</td>' +
+                        '<td>'+ '<div>'+
+                        '<a class="btn btn-success" onclick="activateModSol('+item[0]+')"><i class="icon_lock-open"></i></a>'+
+                        '</div>' + '</td>' +
+                        '</tr>';
+                });
+                table+= '</tbody>'+
+                    '</table>';
+                $("#secTablaSolicitudes").append(table);
+            }
+
+        }
+    });
+}
+
 function activateModPend(id){
-    $("#detalleSol").modal();
+    $("#detallePend").modal();
+    $("#secPenDetalle").empty();
 
     $.ajax({
         url: "/dataDetalleSol",
@@ -71,20 +142,33 @@ function activateModPend(id){
 
             } else {
 
-                data = JSON.parse(data);
+                var table = '<table class="table table-advance table-hover" id="id-sumPend">'+
+                    '<thead>'+
+                    '<tr>'+
+                    '<th><i class="icon_id-2"></i> Referencia</th>'+
+                    '<th><i class="icon_folder"></i> Nombre</th>'+
+                    '<th><i class="icon_datareport"></i> Cantidad</th>'+
+                    '<th><i class="icon_ribbon"></i> Tipo</th>'+
+                    '</tr>'+
+                    '</thead>'+
+                    '<tbody id="sumPend">';
 
-                /*
-                $("#idEmp-mod").val(data[0][0]);
-                $("#idUser-mod").val(data[0][1]);
-                $("#cedulaEmp-mod").val(data[0][2]);
-                $("#nombreEmp-mod").val(data[0][3]);
-                $("#apellidoEmp-mod").val(data[0][4]);
-                $("#emailEmp-mod").val(data[0][5]);
-                $("#telefonoEmp-mod").val(data[0][6]);
-                $("#usuarioEmp-mod").val(data[0][8]);
-                $("#rolEmp-mod").append('<option disabled selected>'+ data[0][11] +'</option>');
-                depenMod(data[0][12],data[0][13]);
-                */
+                data = JSON.parse(data);
+                $("#descripcion-pend").val(data[0][6]);
+
+                $.each(data, function (index, item) {
+
+                    table += '<tr id="row' + item[1] + '">' +
+                        '<td>'+ item[2] +'</td>' +
+                        '<td>'+ item[3] +'</td>' +
+                        '<td>'+ item[4] +'</td>' +
+                        '<td>'+ item[5] +'</td>' +
+                        '</tr>';
+                });
+
+                table+= '</tbody>'+
+                        '</table>';
+                $("#secPenDetalle").append(table);
 
             }
         }
@@ -92,6 +176,55 @@ function activateModPend(id){
 
 }
 
+function activateModSol(id){
+    $("#detalleSol").modal();
+    $("#secSolicitud").empty();
+
+    $.ajax({
+        url: "/dataDetalleSol",
+        type: "POST",
+        data:{'id': id},
+        cache: "false",
+        success: function (data) {
+            if (data == "") {
+
+            } else {
+
+                var table = '<table class="table table-advance table-hover" id="id-sumSol">'+
+                    '<thead>'+
+                    '<tr>'+
+                    '<th><i class="icon_id-2"></i> Referencia</th>'+
+                    '<th><i class="icon_folder"></i> Nombre</th>'+
+                    '<th><i class="icon_datareport"></i> Cantidad</th>'+
+                    '<th><i class="icon_ribbon"></i> Tipo</th>'+
+                    '</tr>'+
+                    '</thead>'+
+                    '<tbody id="sumSolicitud">';
+
+                data = JSON.parse(data);
+                $("#descripcion-sol").val(data[0][6]);
+
+                $.each(data, function (index, item) {
+
+                    table += '<tr id="row' + item[1] + '">' +
+                        '<td>'+ item[2] +'</td>' +
+                        '<td>'+ item[3] +'</td>' +
+                        '<td>'+ item[4] +'</td>' +
+                        '<td>'+ item[5] +'</td>' +
+                        '</tr>';
+                });
+
+                table+= '</tbody>'+
+                    '</table>';
+                $("#secSolicitudes").append(table);
+
+            }
+        }
+    });
+}
+
 $(function () {
     cargarTablaPend();
+    cargarTablaSolicitud();
+
 });
