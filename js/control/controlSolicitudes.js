@@ -124,7 +124,17 @@ function cargarTablaSolicitud(){
                     '</table>';
                 $("#secTablaSolicitudes").append(table);
             }
-
+            $("#id-tableSolicitudes").DataTable({
+                "language": {
+                    "search": "<span>Filtrar:</span>",
+                    "paginate": {'first': 'Primero', 'last': 'Ultimo', 'next': 'Siguiente', 'previous': 'Anterior'},
+                    "lengthMenu": "Mostrando  _MENU_  Registros",
+                    "zeroRecords": "No hay Informacion disponible",
+                    "info": "Mostrando _PAGE_ de _PAGES_",
+                    "infoEmpty": "No se encontraron datos",
+                    "infoFiltered": "(Filtrado de un total de _MAX_ registros)"
+                }
+            });
         }
     });
 }
@@ -185,7 +195,7 @@ function cargarTablaMySolicitud(){
                         '<td>'+ item[3] +'</td>' +
                         '<td>'+ item[4] +'</td>' +
                         '<td>'+ '<div>'+
-                        '<a class="btn btn-success" onclick="activateModSol('+item[0]+')"><i class="icon_lock-open"></i></a>'+
+                        '<a class="btn btn-success" onclick="activateModMySol('+item[0]+')"><i class="icon_lock-open"></i></a>'+
                         '</div>' + '</td>' +
                         '</tr>';
                 });
@@ -193,7 +203,17 @@ function cargarTablaMySolicitud(){
                     '</table>';
                 $("#secTableMiSoli").append(table);
             }
-
+            $("#id-tableMySolicitudes").DataTable({
+                "language": {
+                    "search": "<span>Filtrar:</span>",
+                    "paginate": {'first': 'Primero', 'last': 'Ultimo', 'next': 'Siguiente', 'previous': 'Anterior'},
+                    "lengthMenu": "Mostrando  _MENU_  Registros",
+                    "zeroRecords": "No hay Informacion disponible",
+                    "info": "Mostrando _PAGE_ de _PAGES_",
+                    "infoEmpty": "No se encontraron datos",
+                    "infoFiltered": "(Filtrado de un total de _MAX_ registros)"
+                }
+            });
         }
     });
 }
@@ -249,6 +269,53 @@ function activateModPend(id){
 
 function activateModSol(id){
     $("#detalleSol").modal();
+    $("#secSolicitud").empty();
+
+    $.ajax({
+        url: "/dataDetalleSol",
+        type: "POST",
+        data:{'id': id},
+        cache: "false",
+        success: function (data) {
+            if (data == "") {
+
+            } else {
+
+                var table = '<table class="table table-advance table-hover" id="id-sumSol">'+
+                    '<thead>'+
+                    '<tr>'+
+                    '<th><i class="icon_id-2"></i> Referencia</th>'+
+                    '<th><i class="icon_folder"></i> Nombre</th>'+
+                    '<th><i class="icon_datareport"></i> Cantidad</th>'+
+                    '<th><i class="icon_ribbon"></i> Tipo</th>'+
+                    '</tr>'+
+                    '</thead>'+
+                    '<tbody id="sumSolicitud">';
+
+                data = JSON.parse(data);
+                $("#descripcion-sol").val(data[0][6]);
+
+                $.each(data, function (index, item) {
+
+                    table += '<tr id="row' + item[1] + '">' +
+                        '<td>'+ item[2] +'</td>' +
+                        '<td>'+ item[3] +'</td>' +
+                        '<td>'+ item[4] +'</td>' +
+                        '<td>'+ item[5] +'</td>' +
+                        '</tr>';
+                });
+
+                table+= '</tbody>'+
+                    '</table>';
+                $("#secSolicitudes").append(table);
+
+            }
+        }
+    });
+}
+
+function activateModMySol(id){
+    $("#detalleMySol").modal();
     $("#secSolicitud").empty();
 
     $.ajax({
