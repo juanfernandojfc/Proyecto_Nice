@@ -51,6 +51,17 @@ use Model\Suministro as suministro;
             }
         }
 
+        public function showDataUser(){
+            $sol = new solicitud();
+            $lista = \mysqli_fetch_all($sol->mostrarUser());
+
+            if(count($lista) == 0){
+                echo "";
+            }else{
+                echo json_encode($lista);
+            }
+        }
+
         public function showPendientes(){
             $sol = new solicitud();
             $lista = \mysqli_fetch_all($sol->mostrarPendiente());

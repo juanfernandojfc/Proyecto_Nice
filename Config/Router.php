@@ -77,6 +77,14 @@ class Router{
             }
         });
 
+        R::get('/user/mySolicitud', function(){
+            if(isset($_SESSION['user_name'])){
+                call_user_func_array(array(USER,'vista'),array("mySolicitud"));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
         R::get('/user/getProveedor', function(){
             if(isset($_SESSION['user_name'])){
                 call_user_func_array(array(USER,'vista'),array("getProveedor"));
@@ -92,6 +100,7 @@ class Router{
                 call_user_func(array(HOME,'index'));
             }
         });
+
 
         R::get('/user/getSuministro', function(){
             if(isset($_SESSION['user_name'])){
@@ -295,7 +304,15 @@ class Router{
 
         R::get('/dataSolicitud', function(){
             if(isset($_SESSION['user_name'])){
-                call_user_func_array(array(SOLICITUD,'showData'),array('PENDIENTE'));
+                call_user_func(array(SOLICITUD,'showData'));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
+        R::get('/dataMySolicitud', function(){
+            if(isset($_SESSION['user_name'])){
+                call_user_func(array(SOLICITUD,'showDataUser'));
             }else{
                 call_user_func(array(HOME,'index'));
             }

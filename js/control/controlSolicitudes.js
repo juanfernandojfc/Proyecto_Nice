@@ -82,7 +82,7 @@ function cargarTablaSolicitud(){
                     '<th><i class="icon_cogs"></i> Acciones</th>'+
                     '</tr>'+
                     '</thead>'+
-                    '<tbody id="tablePend">';
+                    '<tbody id="tableSol">';
 
 
                 data = JSON.parse(data);
@@ -123,6 +123,75 @@ function cargarTablaSolicitud(){
                 table+= '</tbody>'+
                     '</table>';
                 $("#secTablaSolicitudes").append(table);
+            }
+
+        }
+    });
+}
+
+function cargarTablaMySolicitud(){
+    console.log("entre");
+    $.ajax({
+        url: "/dataMySolicitud",
+        type: "GET",
+        cache: "false",
+        success: function (data) {
+            if (data == "") {
+
+            } else {
+
+                var stade;
+                var table = '<table class="table table-advance table-hover" id="id-tableMySolicitudes">'+
+                    '<thead>'+
+                    '<tr>'+
+                    '<th><i class="icon_archive"></i> Estado</th>'+
+                    '<th><i class="icon_id"></i> ID</th>'+
+                    '<th><i class="icon_calendar"></i> Fecha</th>'+
+                    '<th><i class="icon_calendar"></i> F. Entrega</th>'+
+                    '<th><i class="icon_tag"></i> Tipo solicitud</th>'+
+                    '<th><i class="icon_cogs"></i> Acciones</th>'+
+                    '</tr>'+
+                    '</thead>'+
+                    '<tbody id="tableMySol">';
+
+
+                data = JSON.parse(data);
+                $.each(data, function (index, item) {
+
+                    switch(item[1]){
+                        case "PENDIENTE":
+                            stade = "btn btn-warning";
+                            break;
+
+                        case "DENEGADA":
+                            stade = "btn btn-danger";
+                            break;
+
+                        case "COMPLETA":
+                            stade = "btn btn-success";
+                            break;
+                    }
+
+                    if(item[3]===null){
+                        item[3] = "SIN REALIZAR";
+                    }
+
+                    table += '<tr id="row' + item[0] + '">' +
+                        '<td>'+
+                        '<a class="'+ stade +'" disabled>'+ item[1] +'</a>'+
+                        '</td>' +
+                        '<td>'+ item[0] +'</td>' +
+                        '<td>'+ item[2] +'</td>' +
+                        '<td>'+ item[3] +'</td>' +
+                        '<td>'+ item[4] +'</td>' +
+                        '<td>'+ '<div>'+
+                        '<a class="btn btn-success" onclick="activateModSol('+item[0]+')"><i class="icon_lock-open"></i></a>'+
+                        '</div>' + '</td>' +
+                        '</tr>';
+                });
+                table+= '</tbody>'+
+                    '</table>';
+                $("#secTableMiSoli").append(table);
             }
 
         }
@@ -299,5 +368,6 @@ function aceptarSolicitud(){
 $(function () {
     cargarTablaPend();
     cargarTablaSolicitud();
+    cargarTablaMySolicitud();
 
 });

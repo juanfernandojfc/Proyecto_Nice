@@ -171,6 +171,16 @@ namespace Model;
             return $datos;
         }
 
+
+        public function mostrarUser(){
+            $sql = "SELECT s.idSolicitud, s.estadoSolicitud,s.fechaSolicitud, s.fechaEntrega, s.tipoSolicitud
+                    FROM solicitud AS s 
+                    INNER JOIN dependencia AS d ON d.idDepen=s.idDepen
+                    WHERE s.idDepen= '{$_SESSION['user_dependencia']}'";
+            $datos = $this->con->consultaRetorno($sql);
+            return $datos;
+        }
+
         public function mostrarPendiente(){
             $sql = "SELECT s.idSolicitud, d.nombreDepen, s.tipoSolicitud, s.fechaSolicitud 
                     FROM solicitud AS s 
