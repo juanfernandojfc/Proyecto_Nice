@@ -248,6 +248,7 @@ function denegarSolicitud(){
                     if(data=="1"){
                         swal("¡HECHO!","¡Solicitud Rechazada!","success");
                         $("#secTablaSolicitudes").empty();
+                        $("#secTablaPendientes").empty();
                         cargarTablaSolicitud();
                         cargarTablaPend();
                     }else{
@@ -257,6 +258,42 @@ function denegarSolicitud(){
             });
         });
 
+}
+
+function aceptarSolicitud(){
+
+    swal({
+            title: "¿Desea Aceptar la solicitud?",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#4cd964",
+            cancelButtonText: "No",
+            confirmButtonText: "Sí, deseo hacerlo",
+            closeOnConfirm: false
+        },
+        function(){
+            idSol=$("#idSolicitud").val();
+
+            $.ajax({
+                url: "/confirmSolicitud",
+                type: "POST",
+                data:{'id': idSol},
+                cache: "false",
+                success: function (data) {
+                    if(data=="1"){
+                        swal("¡HECHO!","¡Solicitud Completa!","success");
+                        $("#secTablaSolicitudes").empty();
+                        $("#secTablaPendientes").empty();
+                        cargarTablaSolicitud();
+                        cargarTablaPend();
+                    }else{
+                        swal("ERROR",data,"error");
+                    }
+
+                    console.log(data);
+                }
+            });
+        });
 }
 
 $(function () {

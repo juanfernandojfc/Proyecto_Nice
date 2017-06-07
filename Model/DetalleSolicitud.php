@@ -72,11 +72,20 @@ namespace Model;
         }
 
         public function detalleSol($id){
-            $sql = "SELECT d.idSolicitud, s.idSuministro, s.referenciaSum, s.nombreSum, s.stock, s.tipo, sd.descripcion
+            $sql = "SELECT d.idSolicitud, s.idSuministro, s.referenciaSum, s.nombreSum, d.cantidad, s.tipo, sd.descripcion
                     FROM detalle_solicitud AS d 
-                    INNER JOIN suministro AS s ON s.idSuministro=d.IdSuministro
+                    INNER JOIN suministro AS s ON s.idSuministro=d.idSuministro
                     INNER JOIN solicitud AS sd ON sd.idSolicitud=d.IdSolicitud
                     WHERE d.idSolicitud = $id";
+            $datos = $this->con->consultaRetorno($sql);
+            return $datos;
+        }
+
+        public function showDetalles($id){
+            $sql = "SELECT d.idSolicitud, d.idSuministro, d.cantidad, s.stock 
+            FROM detalle_solicitud AS d
+            INNER JOIN suministro AS s ON s.idSuministro=d.idSuministro
+            WHERE idSolicitud = $id";
             $datos = $this->con->consultaRetorno($sql);
             return $datos;
         }

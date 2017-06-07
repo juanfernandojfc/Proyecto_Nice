@@ -383,6 +383,15 @@ class Router{
             }
         });
 
+        R::post('/confirmSolicitud', function(){
+            if(isset($_SESSION['user_name'])){
+                $arg = $_POST;
+                call_user_func_array(array(SOLICITUD,'confirmarSolicitud'),array($arg));
+            }else{
+                call_user_func(array(HOME,'index'));
+            }
+        });
+
         R::post('/updateEmpleado', function(){
             if(isset($_SESSION['user_name'])){
                 $arg = $_POST;

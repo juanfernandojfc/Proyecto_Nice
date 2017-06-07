@@ -180,9 +180,14 @@ namespace Model;
             return $datos;
         }
 
-        public function updateEstado($id,$stade){
-            $sql = "UPDATE solicitud SET estadoSolicitud='{$stade}' WHERE idSolicitud= '{$id}'";
-            return $this->con->consultaRetorno($sql);
+        public function updateEstado($id,$stade,$entrega){
+            if($entrega==" "){
+                $sql = "UPDATE solicitud SET estadoSolicitud='{$stade}' WHERE idSolicitud= '{$id}'";
+                return $this->con->consultaRetorno($sql);
+            }else{
+                $sql = "UPDATE solicitud SET estadoSolicitud='{$stade}', fechaEntrega=now() WHERE idSolicitud= '{$id}'";
+                return $this->con->consultaRetorno($sql);
+            }
         }
 
 

@@ -10,6 +10,7 @@ namespace Controllers;
 
 use Model\Solicitud as solicitud;
 use Model\DetalleSolicitud as detalle;
+use Model\Suministro as suministro;
 
 
     class SolicitudController{
@@ -74,7 +75,24 @@ use Model\DetalleSolicitud as detalle;
 
         public function denegarSolicitud($id){
             $sol = new solicitud();
-            $resp = $sol->updateEstado($id['id'],"DENEGADA");
+            $resp = $sol->updateEstado($id['id'],"DENEGADA"," ");
+            echo $resp;
+        }
+
+        public function confirmarSolicitud($id){
+
+            $detalle = new detalle();
+            $suministro = new suministro();
+            $lista = \mysqli_fetch_all($detalle->showDetalles($id['id']));
+
+            for($i=0; $i < sizeof($lista); $i++){
+                $suministro->setIdSuministro($lista[$i][1]);
+                $suministro->setStock($lista[$i][3]-$lista[$i][2]);
+                $suministro->updateStock();
+            }
+
+            $sol = new solicitud();
+            $resp = $sol->updateEstado($id['id'],"COMPLETA", "tiene");
             echo $resp;
         }
 
