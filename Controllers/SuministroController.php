@@ -16,6 +16,7 @@ namespace Controllers;
         public function addControl($datos){
             if ($datos['referencia']=="" || $datos['nombre']=="" || $datos['tipo']==""){
                 echo "";
+                return "";
             }else{
                 $sum = new suministro();
                 $sum->setReferenciaSum(strtoupper($datos['referencia']));
@@ -24,6 +25,7 @@ namespace Controllers;
                 $resp = $sum->add();
 
                 echo $resp;
+                return $resp;
             }
 
         }
@@ -60,6 +62,7 @@ namespace Controllers;
             $resp = $sum->update();
 
             echo $resp;
+            return $resp;
         }
 
         public function select(){

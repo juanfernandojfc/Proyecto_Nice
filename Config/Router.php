@@ -10,10 +10,9 @@ define('EMPLEADO','Controllers\\EmpleadoController');
 define('PROVEEDOR','Controllers\\ProveedorController');
 define('SOLICITUD','Controllers\\SolicitudController');
 define('SUMINISTRO','Controllers\\SuministroController');
+define('TEST','test\\testAWDS');
 
 use Config\Routing as R;
-use Model\Proveedor;
-use Model\Suministro;
 
 class Router{
 
@@ -477,6 +476,7 @@ class Router{
                 call_user_func(array(HOME,'index'));
             }
         });
+
 
         R::dispatch();
 

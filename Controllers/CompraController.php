@@ -54,8 +54,10 @@ use Model\Suministro as suministro;
                     $ofimatico->add();
                 }
                 echo $resp;
+                return $resp;
             }else{
                 echo $resp;
+                return $resp;
             }
         }
 

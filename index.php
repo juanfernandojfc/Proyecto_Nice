@@ -6,6 +6,7 @@
 	define('ROOT', realpath(dirname(__FILE__)) . DS);
     define('DIR', 'http://localhost/');
 
+
 	//Llama la clase autoload
 	require_once "Config/Autoload.php";
 	//ejecuta el autoload
